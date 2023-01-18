@@ -10,7 +10,7 @@ const user = {
 function Profile() {
   return (
     <>
-      <h1>{user.name}</h1>
+      {/* <h1>{user.name}</h1>
       <img
         className="avatar"
         src={user.imageUrl}
@@ -20,21 +20,7 @@ function Profile() {
           borderRadius: "30px",
           height: user.imageSize
         }}
-      />
-
-
-      <ul class="dropdown-menu">
-      <ol>
-          <a class="dropdown-item" href="/cart">
-            Cart
-          </a>
-        </ol>
-        <ol>
-          <a class="dropdown-item" href="/logout">
-            Logout
-          </a>
-        </ol>
-      </ul>
+      /> */}
       
     </>
   );

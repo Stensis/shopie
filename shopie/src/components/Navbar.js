@@ -5,7 +5,7 @@ function Navbar() {
     <>
       <div class="navbar">
         {/* <a href="/home"> */}
-        <h2>Shoppie App</h2>
+        <h2 className="navheading">Shoppie App</h2>
         {/* </a> */}
 
         <ul className="nav-ul">
@@ -23,16 +23,17 @@ function Navbar() {
           <li>
             <a href="/contactUs">Contact Us</a>
           </li>
-        </ul>
-
-        <ol>
+          <div><ul className="out-nav">
           <li>
             <a href="/cart">🛒</a>
           </li>
           <li>
             <a href="/profile">👤</a>
           </li>
-        </ol>
+        </ul></div>
+        </ul>
+
+        
       </div>
     </>
   );
