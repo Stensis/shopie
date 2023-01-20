@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
+//import React, { useState, useEffect } from "react";
 
 function AddCart() {
-  const [item, setItem] = useState([]);
+  // const [item, setItem] = useState([]);
+  let item = {};
 
-  useEffect(() => {
-    fetch("http://localhost:3000/products/${itemid}")
-      .then((res) => res.json())
-      .then((item) => setItem(item));
-    console.log(item);
-  }, []);
+  // useEffect(() => {
+  //   fetch(`http://localhost:3000/products/${id}`)
+  //     .then((res) => res.json())
+  //     .then((item) => setItem(item));
+  // }, []);
 
   return (
     <>
