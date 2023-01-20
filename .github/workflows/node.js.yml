@@ -27,13 +27,13 @@ jobs:
         cache: 'npm'
 
     - name: Install dependencies
-      run: npm install
+    - run: npm install
 
     - name: Building Shopie Application
     - run: npm run build
 
     - name: Deploy Shopie Application
-      run: |
+    - run: |
         git config --global user.name $user_name
         git config --global user.email $user_email
         git remote set-url origin https://${github_token}@github.com/${repository}
