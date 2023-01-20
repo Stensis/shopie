@@ -1,13 +1,8 @@
 import React from "react";
-
-const user = {
-  name: "Irene njuguna",
-  imageUrl:
-    "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-  imageSize: "70px"
-};
+import { useSelector } from "react-redux";
 
 function Profile() {
+  const user = useSelector((state) =>state.user.value);
   return (
     <>
       <div>
@@ -28,7 +23,7 @@ function Profile() {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            {user.name}
+            Name:{user.name}
           </button>
           <ol className="dropdown-menu">
             <li>

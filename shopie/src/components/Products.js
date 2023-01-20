@@ -2,30 +2,18 @@ import React, { useState, useEffect } from "react";
 
 function Products() {
   const [products, setProducts] = useState([]);
-  const [likes, setLikes] = useState(0);
 
   useEffect(() => {
-    fetch("http://localhost:3000/products")
+    fetch("http://localhost:3001/products")
       .then((res) => res.json())
       .then((items) => setProducts(items));
     // console.log(products);
   }, []);
 
   // incrementing like button
-  function handleClick(numberOfLikesFromProduct) {
-    console.log(numberOfLikesFromProduct);
-    console.log(likes);
-    if (numberOfLikesFromProduct > likes) {
-      setLikes(numberOfLikesFromProduct);
-      return;
-    }
-    setLikes(numberOfLikesFromProduct + 1);
-  }
-
-  // show likes
-  function updateLikes(numberOfLikesFromProduct) {
-    setLikes(numberOfLikesFromProduct);
-    return numberOfLikesFromProduct;
+  const [like, setLike] = useState(0);
+  function handleClick() {
+    setLike(like + 1);
   }
 
   return (
@@ -51,11 +39,10 @@ function Products() {
                         Add to cart
                       </a>
                       <button
-                      type="button"
-                        className="p-3 rounded border border-danger"
-                        onClick={() => handleClick(product.likes)}
+                        className="m-3 rounded border border-danger"
+                        onClick={handleClick}
                       >
-                        ❤️ {likes === 0 ? updateLikes(product.likes) : likes}
+                        ❤️ {like}
                       </button>
                     </div>
                   </div>

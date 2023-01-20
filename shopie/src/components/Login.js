@@ -1,7 +1,11 @@
 import React from "react";
 import "../App.css";
+import { useDispatch } from "react-redux";
+import {login} from "../features/User"
 
 function LoginForm() {
+  const dispatch = useDispatch();
+
   return (
     <>
       <div className="container">
@@ -38,7 +42,21 @@ function LoginForm() {
             <hr />
           </div>
 
-          <button className="btn">Login</button>
+          <button
+            onClick={() => {
+              dispatch(
+                login({
+                  name: "",
+                  email: "",
+                  password: "",
+                  confirmpassword: ""
+                })
+              );
+            }}
+            className="btn"
+          >
+            Login
+          </button>
           <span className="forgotPassword">Forgot password?</span>
         </form>
       </div>

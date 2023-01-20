@@ -12,7 +12,6 @@ import CheckOut from "./components/CheckOut";
 import Logout from "./components/Logout";
 
 
-
 function App() {
   return (
     <>
@@ -35,6 +34,7 @@ function App() {
 
         <Route path="/logout" element={<Logout />} />
 
+        
       </Routes>
     </>
   );
