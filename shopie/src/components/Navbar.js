@@ -3,10 +3,10 @@ import React from "react";
 function Navbar() {
   return (
     <>
-      <div class="navbar">
-        {/* <a href="/home"> */}
-        <h2 className="navheading">Shoppie App</h2>
-        {/* </a> */}
+      <div className="navbar">
+        <a href="/home">
+          <h2 className="navheading">Shoppie App</h2>
+        </a>
 
         <ul className="nav-ul">
           <li className="nav-li">
@@ -23,17 +23,17 @@ function Navbar() {
           <li>
             <a href="/contactUs">Contact Us</a>
           </li>
-          <div><ul className="out-nav">
-          <li>
-            <a href="/cart">🛒</a>
-          </li>
-          <li>
-            <a href="/profile">👤</a>
-          </li>
-        </ul></div>
+          <div>
+            <ul className="out-nav">
+              <li>
+                <a href="/cart">🛒</a>
+              </li>
+              <li>
+                <a href="/profile">👤</a>
+              </li>
+            </ul>
+          </div>
         </ul>
-
-        
       </div>
     </>
   );

@@ -21,28 +21,28 @@ function Profile() {
             height: user.imageSize
           }}
         ></img>
-        <div class="dropdown m-3">
+        <div className="dropdown m-3">
           <button
-            class="btn btn-secondary dropdown-toggle"
+            className="btn btn-secondary dropdown-toggle"
             type="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             {user.name}
           </button>
-          <ol class="dropdown-menu">
+          <ol className="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="/cart">
+              <a className="dropdown-item" href="/cart">
                 Your Cart
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="/logout">
+              <a className="dropdown-item" href="/logout">
                 Logout
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="/profile">
+              <a className="dropdown-item" href="/profile">
                 Back ⬆️
               </a>
             </li>
