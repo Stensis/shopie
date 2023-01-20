@@ -39,4 +39,4 @@ jobs:
         user_name: 'Stensis'
         user_email: 'irenenjuguna98@gmail.com'
         github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
-        repository: ${{ shopie }}
+        repository: ${{ github.repository }}
