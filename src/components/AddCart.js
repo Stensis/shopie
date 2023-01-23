@@ -62,6 +62,14 @@ function AddCart() {
               <button type="button" className="btn btn-outline-warning m-1">
                 Remove Item
               </button>
+              <li>
+                <a
+                  href="/wishlist"
+                  className="d-md-flex justify-content-md-center"
+                >
+                  Add to Wishlist
+                </a>
+              </li>
             </div>
           </div>
         </div>

@@ -10,6 +10,7 @@ import AddCart from "./components/AddCart";
 import Profile from "./components/Profile";
 import CheckOut from "./components/CheckOut";
 import Logout from "./components/Logout";
+import Wishlist from "./components/Wishlist";
 
 
 function App() {
@@ -33,6 +34,9 @@ function App() {
         <Route path="/profile" element={<Profile />} />
 
         <Route path="/logout" element={<Logout />} />
+
+        <Route path="/wishlist" element={<Wishlist />} />
+
 
         
       </Routes>

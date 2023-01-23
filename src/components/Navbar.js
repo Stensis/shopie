@@ -4,13 +4,13 @@ function Navbar() {
   return (
     <>
       <div className="navbar">
-        <a href="/home">
+        <a href="/">
           <h2 className="navheading">Shoppie App</h2>
         </a>
 
         <ul className="nav-ul">
           <li className="nav-li">
-            <a className="nav-a" href="/home">
+            <a className="nav-a" href="/">
               Home
             </a>
           </li>

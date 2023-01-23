@@ -1,19 +1,22 @@
 {
-  "posts": [
+  "products": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "title": "Snake",
+      "imageUrl": "https://images.unsplash.com/photo-1672589643613-efa5e8992ce3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+      "description": "Snake description",
+      "likes": 20,
+      "seller": "Kilimall",
+      "amount": "Ksh 2000"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "title": "Sneaker",
+      "imageUrl": "https://images.unsplash.com/photo-1672595527737-fe40c5f93b12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+      "description": "Sneaker description",
+      "likes": 10,
+      "seller": "jumia",
+      "amount": "Ksh 20"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
