@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/shopie/static/css/main.52311709.css",
-    "main.js": "/shopie/static/js/main.39cf216e.js",
+    "main.js": "/shopie/static/js/main.473472c3.js",
     "index.html": "/shopie/index.html",
     "main.52311709.css.map": "/shopie/static/css/main.52311709.css.map",
-    "main.39cf216e.js.map": "/shopie/static/js/main.39cf216e.js.map"
+    "main.473472c3.js.map": "/shopie/static/js/main.473472c3.js.map"
   },
   "entrypoints": [
     "static/css/main.52311709.css",
-    "static/js/main.39cf216e.js"
+    "static/js/main.473472c3.js"
   ]
 }
