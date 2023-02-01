@@ -1,8 +1,11 @@
-//import React, { useState, useEffect } from "react";
+import { useContext } from "react";
+import { ItemsContext } from "../contexts/itemsContext";
 
 function AddCart() {
+  // console.log(items)
+  const { items, setItems } = useContext(ItemsContext);
+  console.log(items)
   // const [item, setItem] = useState([]);
-  let item = {};
 
   // useEffect(() => {
   //   fetch(`http://localhost:3000/products/${id}`)
@@ -12,7 +15,66 @@ function AddCart() {
 
   return (
     <>
-      <div className="how-section1">
+      <div>
+        <h2 className="bg-black mt-2 p-2 text-center rounded border border-warning">
+          Your Order
+        </h2>
+        {items &&
+          items.map((item) => {
+            return(
+            <div className="container text-center">
+              <div className="row align-items-start">
+                <div className="col">
+                  <h4> Name: {" " + item.title}</h4>
+                  <img src="/" alt="" />
+                </div>
+                <div className="col text-center">
+                  <div className="input-group w-50">
+                    <button className="w-25 bg-info rounded" type="button">
+                      -
+                    </button>
+                    <input
+                      type="text"
+                      className="form-control border border-warning text-dark"
+
+                      // aria-label="Example text with two button addons"
+                    />
+                    <button className="w-25 bg-info rounded" type="button">
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="input-group mb-3">
+                    <span className="input-group-text">Ksh:</span>
+                    <span className="input-group-text">{item.price}</span>
+                  </div>
+                </div>
+                <div className="col">
+                  <button type="button" className="rounded bg-danger">
+                    Remove
+                  </button>
+                </div>
+              </div>
+            </div>
+          )})}
+        <div className="bg-black mt-2 p-2 text-center rounded border border-warning">
+          <div className="row">
+            <div className="col-5  align-self-start">
+              <h4>Total:</h4>
+            </div>
+            <div className="col align-self-center">
+              <span className="input">Amount: </span>
+              <span className="input">0.00</span>
+            </div>
+            <div className="col align-self-end">
+              <button className="bg-success rounded">Place order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="how-section1">
         <div className="row">
           <div className="col-md-6 how-img">
             <div className="col">
@@ -73,7 +135,7 @@ function AddCart() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

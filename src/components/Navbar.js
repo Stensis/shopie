@@ -1,35 +1,46 @@
-import React from "react";
+import React, {useContext} from "react";
+import { ItemsContext } from "../contexts/itemsContext";
 
 function Navbar() {
+  const {items, setItems} = useContext(ItemsContext);
   return (
     <>
       <div className="navbar">
         <a href="/">
-          <h2 className="navheading">Shoppie App</h2>
+          <h2 className="text-warning">Shoppie App</h2>
         </a>
-
         <ul className="nav-ul">
           <li className="nav-li">
-            <a className="nav-a" href="/">
+            <a className="nav-a text-warning" href="/">
               Home
             </a>
           </li>
           <li>
-            <a href="/products">Products</a>
+            <a className="text-warning" href="/products">
+              Products
+            </a>
           </li>
           <li>
-            <a href="/aboutUs">About Us</a>
+            <a className="text-warning" href="/aboutUs">
+              About Us
+            </a>
           </li>
           <li>
-            <a href="/contactUs">Contact Us</a>
+            <a className="text-warning" href="/contactUs">
+              Contact Us
+            </a>
           </li>
           <div>
             <ul className="out-nav">
               <li>
-                <a href="/cart">🛒</a>
+                <a className="text-warning" href="/cart">
+                  🛒 {items.length === 0 ? "" : " " + items.length}
+                </a>
               </li>
               <li>
-                <a href="/profile">👤</a>
+                <a className="text-warning" href="/profile">
+                  👤
+                </a>
               </li>
             </ul>
           </div>

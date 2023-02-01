@@ -7,7 +7,7 @@
       "description": "Snake description",
       "likes": 20,
       "seller": "Kilimall",
-      "amount": "Ksh 2000"
+      "amount": 2000
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "description": "Sneaker description",
       "likes": 10,
       "seller": "jumia",
-      "amount": "Ksh 20"
+      "amount": 20
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "description": "Snake description",
       "likes": 20,
       "seller": "Kilimall",
-      "amount": "Ksh 2000"
+      "amount": 2000
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "description": "Sneaker description",
       "likes": 10,
       "seller": "jumia",
-      "amount": "Ksh 20"
+      "amount": 20
     }
   ]
 }
